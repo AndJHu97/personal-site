@@ -2,7 +2,7 @@
   "name": "personal-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AndJHu97.github.io/personal-site",
+  "homepage": "https://andjhu97.github.io/personal-site/",
   "dependencies": {
     "@testing-library/react": "^13.4.0",
     "@types/react": "^18.0.0",
