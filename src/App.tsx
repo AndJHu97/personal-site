@@ -4,7 +4,7 @@ import Main from './Pages/Main';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/personal-site',
     element: <Main />,  
   },
 ]);
