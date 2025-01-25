@@ -1,23 +1,40 @@
 /* src/components/Card.css */
 
 /* Container for card with 3D perspective */
-.card-container {
-    perspective: 1500px; /* Adds depth to the flip effect */
-    height: 100%;
-    width: 100%;
-}
 
 .card {
+    perspective: 1500px; /* Adds depth to the flip effect */
+    width: 100%; /* 100% of the parent container's width */
+    height: 100%; /* 100% of the parent container's height */
+    padding: 15px;
+}
+
+/* Front side of the card (visible initially) */
+.card-front,
+.card-back {
+    perspective: 1500px; /* Adds depth to the flip effect */
+    position: absolute;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 100%; /* 100% of the parent container's width */
-    height: 100%; /* 100% of the parent container's height */
-    margin: 16px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the back face during flip */
     transition: transform 0.3s ease-in-out;
     opacity: 0.95;
-    cursor: pointer;
+    
+}
+
+.card-back.flipped, .card-front.flipped{
+    transform: rotateY(180deg); /* Initially hide the back */
+}
+
+/* Backside of the card */
+.card-back {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Hover effect for the card */
@@ -26,16 +43,17 @@
     animation: pulse 2s ease-in-out infinite; /* Infinite pulse animation */
     border: 2px solid #5db1de; /* Border appears with color when hovered */
     opacity: 1; /* Change opacity to 1 when hovering */
+    transform-origin: center; /* Set the rotation origin to the center */
     box-shadow: 0 4px 5px rgb(155, 233, 255); /* Adds a shadow when hovered */
 }
 
 /* Disable hover effects when card is flipped */
-.card-front.flipped:hover,.card-back.flipped:hover {
+.card-front.flipped:hover, .card-back.flipped:hover {
     transform: none; /* No hover transformation */
     animation: none; /* Remove hover animation */
     border: none; /* Remove border */
     box-shadow: none; /* Remove box shadow */
-    opacity: 0; /* Ensure opacity stays at 1 when flipped */
+    transform: rotateY(180deg); /* Initially hide the back */
 }
 
 
@@ -53,15 +71,7 @@
     }
 }
 
-/* Front side of the card (visible initially) */
-.card-front,
-.card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; /* Hides the back face during flip */
-    transform-style: preserve-3d; /* Ensure 3D effect on flip */
-}
+
 
 /* Card image */
 .card-image {
@@ -104,20 +114,6 @@
     background-color: #0056b3;
 }
 
-/* Backside of the card */
-.card-back {
-    background: #989898;
-    transform-style: preserve-3d; /* Ensure 3D effect on flip */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-    text-align: center;
-}
-
-.card-back.flipped, .card-front.flipped{
-    transform: rotateY(180deg); /* Initially hide the back */
-}
 
 .card-back-content {
     /* Style the content on the back of the card */
@@ -125,16 +121,7 @@
     height: 100%;
 }
 
-.card.flipped{
-    transform: rotateY(180deg); /* Initially hide the back */
-}
 
-/* Flip effect when clicked */
-.card-container.flipped  {
-    transform: rotateY(180deg); /* Initially hide the back */
-    height: 100%;
-    width: 100%;
-}
 
 
 

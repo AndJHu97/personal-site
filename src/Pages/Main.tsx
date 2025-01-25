@@ -1,7 +1,7 @@
 // src/App.tsx
 
 import React, { useState, useEffect } from 'react';
-import Card from '../Components/Card';
+import Deck from '../Components/Deck';
 import '../Style/Main.css';
 
 const App: React.FC = () => {
@@ -44,27 +44,30 @@ const App: React.FC = () => {
   return (
     <div className="background">
       <div className="main-section">
-        <h1>Andrew Hu</h1>
-        <h2>round 'n round we go</h2>
+        <h1>Meanderin' around we go</h1>
+        <h2>andrew_john_hu</h2>
         <div className="cards-container"
         >
+          <div className = "card-wrapper" style={{
+              transform: `translateX(${(currentCardIndex  - 1)  * -100}%)`, // Adjust the translation based on the current card
+            }}
+          >
+            <Deck cards = {cards} />
+          </div>
          
-            {cards.map((card, index) => (
-                 <div
-                 className="card-wrapper"
-                 key = {index}
-                 style={{
-                   transform: `translateX(${(currentCardIndex  - 1)  * -100}%)`, // Adjust the translation based on the current card
-                 }}
-               >
-              <Card
-                key={index}
-                title={card.title}
-                description={card.description}
-                link={card.link}
-              />
-              </div>
-            ))}
+          <div className = "card-wrapper" style={{
+              transform: `translateX(${(currentCardIndex  - 1)  * -100}%)`, // Adjust the translation based on the current card
+            }}
+          >
+            <Deck cards = {cards} />
+          </div>
+
+          <div className = "card-wrapper" style={{
+              transform: `translateX(${(currentCardIndex  - 1)  * -100}%)`, // Adjust the translation based on the current card
+            }}
+          >
+            <Deck cards = {cards} />
+          </div>
           
           {/* Swipe Buttons */}
           <button className="swipe-button left" onClick={prevCard}>
