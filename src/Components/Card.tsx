@@ -12,7 +12,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ title, description, image, link, onClick }) => {
   const [backSide, setBackSide] = useState(false); // To track the flip state
   const [clickTimeout, setClickTimeout] = useState<NodeJS.Timeout | null>(null); // Store the timeout
-
+  console.log("Card image: ", image ? image : "");
   // Handle double-click: flip the card and prevent single-click
   const handleDoubleClick = () => {
     setBackSide(!backSide); // Toggle flip state
@@ -53,22 +53,16 @@ const Card: React.FC<CardProps> = ({ title, description, image, link, onClick })
     >
       <div className={`card-front ${backSide ? 'flipped' : ''}`}>
         {image && <img src={image} alt={title} className="card-image" />}
-        <div className="card-content">
-          <h3 className="card-title">{title}</h3>
-          <p className="card-description">{description}</p>
-          {link && (
-            <a href={link} target="_blank" rel="noopener noreferrer" className="card-link">
-              Learn More
-            </a>
-          )}
-        </div>
+        <button>Link</button>
       </div>
       <div className={`card-back ${!backSide ? 'flipped' : ''}`}>
         <div className="card-back-content">
           <h3 className="card-back-title">Back of {title}</h3>
           <p className="card-back-description">This is the backside of the card.</p>
         </div>
+        <button>Link</button>
       </div>
+      
     </div>
   );
 };

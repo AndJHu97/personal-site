@@ -1,5 +1,5 @@
 // src/App.tsx
-
+import Img0 from "../Images/Card_Covers/0.png";
 import React, { useState, useEffect } from 'react';
 import Deck from '../Components/Deck';
 import '../Style/Main.css';
@@ -11,6 +11,7 @@ const App: React.FC = () => {
   const cards = [
     {
       title: "About Me",
+      image: Img0,
       description: "Learn more about my background, projects, and goals.",
       link: "/about"
     },
