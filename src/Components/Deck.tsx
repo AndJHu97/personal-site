@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import Card from '../Components/Card';
-import '../Style/Deck.css';
 
 interface CardProps {
     title: string;
@@ -21,15 +20,14 @@ const Deck: React.FC<DeckProps> = ({cards}) =>{
     }
 
     return(
-        <div className = "deck">
-            <Card
-            title={cards[cardSelection]?.title}
-            description={cards[cardSelection]?.description}
-            image={cards[cardSelection]?.image}
-            link={cards[cardSelection]?.link}
-            onClick={handleClick}
-            />
-        </div>
+        
+        <Card
+        title={cards[cardSelection]?.title}
+        description={cards[cardSelection]?.description}
+        image={cards[cardSelection]?.image}
+        link={cards[cardSelection]?.link}
+        onClick={handleClick}
+        />
     )
 }
 

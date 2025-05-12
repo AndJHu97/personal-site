@@ -2,6 +2,7 @@
 
 /* Container for card with 3D perspective */
 
+
 .card {
     perspective: 1500px; /* Adds depth to the flip effect */
     width: 100%; /* 100% of the parent container's width */
@@ -17,17 +18,18 @@
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 45%;
+    left: 25%; /* Centers the card (used to be right side of card to center) */
     height: 100%;
     backface-visibility: hidden; /* Hides the back face during flip */
     transition: transform 0.3s ease-in-out;
     opacity: 0.95;
     display: flex;
     flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: center;     /* horizontal center */
     justify-content: space-between;
-    padding: 0;            /* Removes internal spacing */
-    margin: 0;
-    gap: 0;  
+
 }
 
 .card-back.flipped, .card-front.flipped{

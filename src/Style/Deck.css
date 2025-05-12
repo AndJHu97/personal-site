@@ -1,6 +1,0 @@
-.deck {
-    perspective: 1500px; /* Adds depth to the flip effect */
-    width: 100%; /* 100% of the parent container's width */
-    height: 90%; /* 100% of the parent container's height */
-    padding: 15px;
-}

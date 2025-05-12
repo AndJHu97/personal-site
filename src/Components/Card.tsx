@@ -53,16 +53,15 @@ const Card: React.FC<CardProps> = ({ title, description, image, link, onClick })
     >
       <div className={`card-front ${backSide ? 'flipped' : ''}`}>
         {image && <img src={image} alt={title} className="card-image" />}
-        <button>Link</button>
+        <button>More Info</button>
       </div>
       <div className={`card-back ${!backSide ? 'flipped' : ''}`}>
         <div className="card-back-content">
           <h3 className="card-back-title">Back of {title}</h3>
           <p className="card-back-description">This is the backside of the card.</p>
         </div>
-        <button>Link</button>
+        <button>More Info</button>
       </div>
-      
     </div>
   );
 };
