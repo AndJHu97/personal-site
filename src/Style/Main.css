@@ -91,9 +91,9 @@ h2{
 }
 
 .swipe-button.left {
-    left: 20%; /* Position left button on the left side */
+    left: 5%; /* Position left button on the left side */
 }
 
 .swipe-button.right {
-    right: 20%; /* Position right button on the right side */
+    right: 5%; /* Position right button on the right side */
 }

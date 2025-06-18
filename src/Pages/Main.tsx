@@ -45,7 +45,7 @@ const App: React.FC = () => {
   return (
     <div className="background">
       <div className="main-section">
-        <h1>Meanderin'</h1>
+        <h1>Feel Free To Meander Around</h1>
         <h2>andrew_john_hu</h2>
         <div className="cards-container"
         >
