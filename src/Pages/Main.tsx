@@ -10,10 +10,10 @@ const App: React.FC = () => {
   // Define the cards
   const cards = [
     {
-      title: "About Me",
+      title: "Personality Predictor",
       image: Img0,
       description: "Learn more about my background, projects, and goals.",
-      link: "/about"
+      link: "/Personality-Predictor"
     },
     {
       title: "Projects",
