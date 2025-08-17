@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.605bcf36.css",
-    "main.js": "/static/js/main.d7e03913.js",
-    "static/js/488.2d9ecc95.chunk.js": "/static/js/488.2d9ecc95.chunk.js",
-    "static/media/RoundnRound.png": "/static/media/RoundnRound.bf7af8e59894766c1900.png",
-    "static/media/ComprehensiveRecap.png": "/static/media/ComprehensiveRecap.1e771c6ee6e44389ac02.png",
-    "static/media/UI.png": "/static/media/UI.61020daadbccfe315c0a.png",
-    "static/media/Maslows_Hierarchy_of_Needs_Diagram.png": "/static/media/Maslows_Hierarchy_of_Needs_Diagram.eac292faeb21cff4087c.png",
-    "static/media/SpecificBehaviorRecap.png": "/static/media/SpecificBehaviorRecap.a0a30cc778b9070647ef.png",
-    "static/media/0.png": "/static/media/0.06d802ed6eda16a04623.png",
-    "static/media/BehaviorRecap.png": "/static/media/BehaviorRecap.e622cae3554584290174.png",
-    "static/media/Advice.png": "/static/media/Advice.7ef371b752e0fca7e8d6.png",
-    "index.html": "/index.html",
-    "main.605bcf36.css.map": "/static/css/main.605bcf36.css.map",
-    "main.d7e03913.js.map": "/static/js/main.d7e03913.js.map",
-    "488.2d9ecc95.chunk.js.map": "/static/js/488.2d9ecc95.chunk.js.map"
+    "main.css": "/personal-site/static/css/main.4f30e3ef.css",
+    "main.js": "/personal-site/static/js/main.a09dd72b.js",
+    "static/js/488.2d9ecc95.chunk.js": "/personal-site/static/js/488.2d9ecc95.chunk.js",
+    "static/media/RoundnRound.png": "/personal-site/static/media/RoundnRound.bf7af8e59894766c1900.png",
+    "static/media/ComprehensiveRecap.png": "/personal-site/static/media/ComprehensiveRecap.1e771c6ee6e44389ac02.png",
+    "static/media/UI.png": "/personal-site/static/media/UI.61020daadbccfe315c0a.png",
+    "static/media/Maslows_Hierarchy_of_Needs_Diagram.png": "/personal-site/static/media/Maslows_Hierarchy_of_Needs_Diagram.eac292faeb21cff4087c.png",
+    "static/media/SpecificBehaviorRecap.png": "/personal-site/static/media/SpecificBehaviorRecap.a0a30cc778b9070647ef.png",
+    "static/media/0.png": "/personal-site/static/media/0.06d802ed6eda16a04623.png",
+    "static/media/BehaviorRecap.png": "/personal-site/static/media/BehaviorRecap.e622cae3554584290174.png",
+    "static/media/Advice.png": "/personal-site/static/media/Advice.7ef371b752e0fca7e8d6.png",
+    "index.html": "/personal-site/index.html",
+    "main.4f30e3ef.css.map": "/personal-site/static/css/main.4f30e3ef.css.map",
+    "main.a09dd72b.js.map": "/personal-site/static/js/main.a09dd72b.js.map",
+    "488.2d9ecc95.chunk.js.map": "/personal-site/static/js/488.2d9ecc95.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.605bcf36.css",
-    "static/js/main.d7e03913.js"
+    "static/css/main.4f30e3ef.css",
+    "static/js/main.a09dd72b.js"
   ]
 }
