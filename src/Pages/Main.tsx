@@ -16,9 +16,9 @@ const App: React.FC = () => {
       link: "/Personality-Predictor"
     },
     {
-      title: "Projects",
+      title: "NextStepMD",
       description: "Check out the exciting projects I've been working on.",
-      link: "/projects"
+      link: "/nextstepmd"
     },
     {
       title: "Contact",
